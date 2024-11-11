@@ -1,9 +1,53 @@
+/*Basic*/
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Скидання стилів global*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
 }
 
 address {
@@ -14,8 +58,11 @@ a {
   text-decoration: none;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .menu :hover,
@@ -33,7 +80,34 @@ ul {
   background-color: #404bbf;
 }
 
+/*Header*/
+
+.header-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.menu-nav {
+  display: flex;
+  margin-right: auto;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 40px;
+}
+
 .logo {
+  display: flex;
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -47,16 +121,14 @@ ul {
   color: #2e2f42;
 }
 
-.footer-logo-part {
-  color: #f4f4fd;
-}
-
 .menu-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
+  display: block;
 }
 
 .contacts-link {
@@ -68,8 +140,18 @@ ul {
   color: #434455;
 }
 
+/*hero*/
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 292px;
 }
 
 .main-title {
@@ -81,6 +163,8 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: #fff;
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .button {
@@ -93,7 +177,93 @@ ul {
   color: #fff;
   background-color: #4d5ae5;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  min-width: 169px;
+  min-height: 56px;
+  border: 1px solid transparent;
 }
+
+/*main*/
+
+/*Goals*/
+
+.goals-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.goals-item {
+  width: 264px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.goals-subtitle {
+  margin-bottom: 8px;
+}
+
+/*Team*/
+
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team {
+  background-color: #f4f4fd;
+}
+
+.team-item {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 264 px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0 4px 4px;
+  padding: 0px 0px 32px 0px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.team-desc {
+  display: flex;
+  gap: 8px;
+  padding: 32px 16px;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Portfolio*/
+
+.portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
+}
+
+.portfolio-desc {
+  display: flex;
+  gap: 8px;
+  padding: 32px 16px;
+  align-items: flex-start;
+  flex-direction: column;
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+}
+
+/*beds-style title&text*/
 
 .title {
   font-family: "Roboto", sans-serif;
@@ -104,9 +274,10 @@ ul {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.sub-title {
+.subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -125,23 +296,38 @@ ul {
   color: #434455;
 }
 
-.team {
-  background-color: #f4f4fd;
-}
+/*footer*/
 
-.team-item {
-  background-color: #ffffff;
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 140px;
+  padding-bottom: 100px;
 }
 
 .footer {
   background-color: #2e2f42;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
 .footer-text {
+  display: flex;
+  width: 264px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+.footer-logo-part {
   color: #f4f4fd;
 }
