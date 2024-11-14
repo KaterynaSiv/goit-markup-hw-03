@@ -312,12 +312,9 @@ ol {
   padding: 100px 0;
 }
 
-.footer-logo,
-.footer-logo-part {
+.footer-logo {
   display: inline-block;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: row;
+  text-align: 0 auto;
   margin-bottom: 16px;
 }
 
