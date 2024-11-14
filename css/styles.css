@@ -219,7 +219,8 @@ ol {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  width: 264 px;
+  width: 264px;
+  height: 380px;
   align-items: center;
   justify-content: center;
   border-radius: 0 0 4px 4px;
@@ -230,8 +231,7 @@ ol {
 
 .team-desc {
   display: flex;
-  margin-top: 8px;
-  padding: 32 0;
+  padding: 32px 0;
   align-items: center;
   flex-direction: column;
 }
@@ -312,7 +312,8 @@ ol {
   padding: 100px 0;
 }
 
-.footer-logo {
+.footer-logo,
+.footer-logo-part {
   display: inline-block;
   align-items: center;
   justify-content: flex-start;
