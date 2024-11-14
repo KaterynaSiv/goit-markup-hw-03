@@ -154,7 +154,6 @@ ol {
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
-  padding-bottom: 292px;
 }
 
 .main-title {
@@ -232,7 +231,7 @@ ol {
 .team-desc {
   display: flex;
   margin-top: 8px;
-  padding: 32 16;
+  padding: 32 0;
   align-items: center;
   flex-direction: column;
 }
