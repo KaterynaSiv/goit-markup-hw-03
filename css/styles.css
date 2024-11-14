@@ -82,10 +82,13 @@ ol {
 
 /*Header*/
 
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-container {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #e7e9fc;
 }
 
 .menu-nav {
@@ -150,7 +153,7 @@ ol {
 
 .hero {
   background-color: #2e2f42;
-  padding-top: 188px;
+  padding: 188px 0;
   padding-bottom: 292px;
 }
 
@@ -163,7 +166,7 @@ ol {
   text-align: center;
   text-transform: capitalize;
   color: #fff;
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -180,8 +183,8 @@ ol {
   border-radius: 4px;
   padding: 16px 32px;
   min-width: 169px;
-  min-height: 56px;
-  border: 1px solid transparent;
+  height: 56px;
+  border: none;
 }
 
 /*main*/
@@ -200,10 +203,6 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.goals-subtitle {
-  margin-bottom: 8px;
 }
 
 /*Team*/
@@ -232,10 +231,14 @@ ol {
 
 .team-desc {
   display: flex;
-  gap: 8px;
-  padding: 32px 16px;
+  margin-top: 8px;
+  padding: 32 16;
   align-items: center;
   flex-direction: column;
+}
+
+.team-text {
+  text-align: center;
 }
 
 /*Portfolio*/
@@ -243,6 +246,7 @@ ol {
 .portfolio-list {
   display: flex;
   gap: 24px;
+  row-gap: 48px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
@@ -254,7 +258,6 @@ ol {
 
 .portfolio-desc {
   display: flex;
-  gap: 8px;
   padding: 32px 16px;
   align-items: flex-start;
   flex-direction: column;
@@ -285,6 +288,8 @@ ol {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 8px;
+
 }
 
 .text {
@@ -301,20 +306,19 @@ ol {
 .footer-container {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding-top: 140px;
-  padding-bottom: 100px;
 }
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .footer-logo {
-  display: flex;
+  display: inline-block;
   align-items: center;
   justify-content: flex-start;
   flex-direction: row;
+  margin-bottom: 16px;
 }
 
 .footer-text {
